@@ -14,10 +14,10 @@ Proyecto para generar videos cortos de acertijos para Instagram (Reels) con voz,
 
 Para que los cambios que hagas en tu PC se vean en Colab sin tener que borrar ni volver a crear el proyecto:
 
-1. **En tu PC:** sube el proyecto a GitHub (crea un repo, `git init`, `git add .`, `git commit -m "init"`, `git remote add origin https://github.com/TU_USUARIO/TU_REPO.git`, `git push -u origin main`).
-2. **En Colab:** Menu **File > Open notebook** > pestaña **GitHub** > pega la URL del repo o busca por nombre.
-3. Abre **creador_acertijos_ig.ipynb** desde la lista. Colab carga el notebook desde GitHub.
-4. **Cuando cambies algo en tu PC:** haz `git add .`, `git commit -m "..."`, `git push`. En Colab vuelve a abrir el notebook desde GitHub (File > Open notebook > GitHub) y tendras la version nueva. No hace falta borrar nada.
+1. **Repo:** https://github.com/yoquelvisdev08/acertijo
+2. **En tu PC:** para subir cambios: `git add .`, `git commit -m "..."`, `git push`.
+3. **En Colab:** Menu **File > Open notebook** > pestaña **GitHub** > pega `https://github.com/yoquelvisdev08/acertijo` o busca "acertijo", y abre **creador_acertijos_ig.ipynb**.
+4. **Cuando cambies algo en tu PC:** haz `git push`. En Colab vuelve a abrir el notebook desde GitHub y tendras la version nueva. No hace falta borrar nada.
 
 Dentro del notebook hay una **Celda 0 (opcional)** para clonar o actualizar el repo desde Colab con `git pull` si prefieres ese flujo.
 
