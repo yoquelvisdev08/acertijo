@@ -1,0 +1,21 @@
+# Dependencias para el notebook en Google Colab
+# Instalacion: en la primera celda del notebook se hace pip install de estos paquetes
+
+# Voz
+qwen-tts>=0.1.0
+soundfile
+
+# Video (Wan 2.1 via diffusers)
+diffusers>=0.34.0
+transformers>=4.45.0
+accelerate
+ftfy
+
+# Composicion y subtitulos
+moviepy>=2.0.0
+pysrt
+
+# Interfaz
+gradio>=4.0.0
+
+# Ya presentes en Colab: torch, torchvision (se verifican en el notebook)
