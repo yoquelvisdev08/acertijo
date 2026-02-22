@@ -5,7 +5,7 @@
 qwen-tts>=0.1.0
 soundfile
 
-# Video (ModelScope text-to-video-ms-1.7b via diffusers)
+# Video (CogVideoX-2b via diffusers)
 diffusers>=0.34.0
 transformers>=4.45.0
 accelerate

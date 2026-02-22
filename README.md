@@ -5,7 +5,7 @@ Proyecto para generar videos cortos de acertijos para Instagram (Reels) con voz,
 ## Que incluye
 
 - **Voz:** Qwen3-TTS (espanol, voces predefinidas).
-- **Video:** ModelScope text-to-video-ms-1.7b (text-to-video, usa GPU en Colab T4).
+- **Video:** CogVideoX-2B (text-to-video, GPU T4 ~12 GB VRAM).
 - **Subtitulos:** Generados a partir del guion y el audio.
 - **Composicion:** MoviePy (video + audio + subtitulos quemados, formato 9:16).
 - **Interfaz:** Gradio en el propio Colab.
@@ -36,7 +36,7 @@ Dentro del notebook hay una **Celda 0 (opcional)** para clonar o actualizar el r
 
 - Cuenta de Google (Colab).
 - Runtime con GPU (gratis T4 o Colab Pro para mas VRAM).
-- Para el modelo de video (ModelScope 1.7B) se recomienda GPU T4 (15 GB VRAM).
+- GPU T4 (15 GB VRAM) y 12 GB RAM. El modelo de video (CogVideoX-2B) usa ~12 GB VRAM.
 
 ## Estructura del proyecto
 
@@ -49,5 +49,5 @@ creador de clips virales/
 
 ## Referencias
 
-- [ModelScope text-to-video-ms-1.7b](https://huggingface.co/damo-vilab/text-to-video-ms-1.7b) (Diffusers)
+- [CogVideoX-2b](https://huggingface.co/THUDM/CogVideoX-2b) (Diffusers)
 - [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)
