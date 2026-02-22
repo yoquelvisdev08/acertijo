@@ -2,19 +2,36 @@
 
 El notebook `creador_acertijos_ig.ipynb` detecta si corre en Kaggle y adapta rutas, instalacion y lanzamiento de la interfaz.
 
+---
+
+## IMPORTANTE: Configuracion obligatoria en Kaggle
+
+**Verificacion por telefono:** Kaggle exige que tu cuenta este **verificada por telefono** para poder activar Internet en los notebooks. Si no lo has hecho: entra en tu perfil de Kaggle (Account) y completa la verificacion con tu numero de telefono. Sin esto, la opcion Internet no estara disponible o mostrara: *"Your account must be phone verified to access the internet."*
+
+Antes de ejecutar celdas, en el panel derecho **Settings**:
+
+- **Internet:** debe estar **On** (requiere cuenta con telefono verificado). Si esta Off, pip no puede descargar nada y veras:
+  - `Temporary failure in name resolution`
+  - `ERROR: No matching distribution found for moviepy` / `qwen-tts`
+  - `ModuleNotFoundError: No module named 'qwen_tts'`
+  Activa **Internet > On** (y verifica tu telefono en la cuenta si hace falta) y vuelve a ejecutar el notebook desde el inicio.
+
+- **Accelerator:** elige **GPU** (P100 o T4). Sin GPU el video usara CPU y puede saturar la RAM o fallar.
+
+La primera celda de codigo del notebook comprueba en Kaggle si hay Internet; si no, muestra un mensaje claro y detiene la ejecucion.
+
+---
+
 ## Pasos en Kaggle
 
 1. **Crear un notebook**
    - Entra en [kaggle.com](https://www.kaggle.com) y en **Code** elige **New Notebook**.
 
-2. **Subir el proyecto**
-   - Opcion A: Sube solo el notebook (**File > Add input > Upload** y sube `creador_acertijos_ig.ipynb`). Luego copia o pega el contenido de las celdas si hace falta, o abre el notebook subido.
-   - Opcion B: Crea un Dataset en Kaggle con el repo (por ejemplo clonando desde GitHub) y en **Add input** anade ese dataset; el notebook podra leer desde `/kaggle/input/nombre-dataset/`.
+2. **Configurar ANTES de ejecutar**
+   - Panel derecho **Settings**: **Internet > On** y **Accelerator > GPU**.
 
-3. **Configurar el entorno**
-   - En el panel derecho: **Settings**.
-   - **Accelerator:** elige **GPU** (P100 o T4).
-   - **Internet:** **On** (necesario para descargar modelos y dependencias).
+3. **Subir el proyecto**
+   - Sube el notebook (**File > Add input > Upload** y sube `creador_acertijos_ig.ipynb`) o enlaza un dataset con el repo.
 
 4. **Ejecutar celdas**
    - Ejecuta las celdas en orden de arriba a abajo.
