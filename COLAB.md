@@ -1,17 +1,19 @@
 # Como probar en Google Colab
 
 1. Abre [Google Colab](https://colab.research.google.com).
-2. **File > Upload notebook** y sube `creador_acertijos_ig.ipynb`.
+2. **File > Upload notebook** (o **Open notebook > GitHub** con el repo `acertijo`) y abre `creador_acertijos_ig.ipynb`.
 3. **Runtime > Change runtime type > Hardware accelerator > GPU** (T4 recomendado).
 4. Ejecuta las celdas en orden de arriba a abajo:
+   - Celda 0 (opcional): clonar/actualizar repo desde GitHub.
    - Celda 1: instalacion (unos minutos).
-   - Celdas 2-5: config y funciones.
-   - Celda 6: carga el modelo de voz (espera a que termine).
-   - Celda 7: define el pipeline.
-   - Celda 8: crea la interfaz.
+   - Celdas 2-5: config, voz, video y composicion.
+   - Celda 6: inicializacion (no precarga modelos).
+   - Celda 7: pipeline completo.
+   - Celda 8: interfaz Gradio.
+   - **Celda 8b: pre-descarga de modelos** (recomendado). Ejecutala una vez para dejar TTS y Wan en cache; asi la primera generacion no se bloquea por la descarga.
    - Celda 9: lanza la app; haz clic en el enlace que aparezca.
-5. En la interfaz escribe el texto del acertijo y opcionalmente la descripcion del video. Pulsa **Submit**.
-6. La primera generacion puede tardar mas (descarga del modelo de video). Las siguientes seran mas rapidas.
+5. En la interfaz escribe el texto del acertijo y opcionalmente la descripcion del video. Pulsa **Generar**.
+6. Si ejecutaste la Celda 8b, la primera generacion sera mas rapida (modelos ya en cache). Si no, la primera vez descargara voz y video.
 7. Descarga el MP4 desde el reproductor de la interfaz.
 
 ## Si algo falla
