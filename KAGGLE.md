@@ -1,6 +1,8 @@
-# Ejecutar el Creador de Acertijos en Kaggle
+# Kaggle (no soportado actualmente)
 
-El notebook `creador_acertijos_ig.ipynb` detecta si corre en Kaggle y adapta rutas, instalacion y lanzamiento de la interfaz.
+El proyecto **esta configurado para Google Colab**. El notebook `creador_acertijos_ig.ipynb` usa rutas y opciones de Colab (`/content/salida_acertijos`, GPU obligatoria, `demo.launch(share=True)`).
+
+Para usar en Colab, sigue las instrucciones del propio notebook o de **COLAB.md**.
 
 ---
 
