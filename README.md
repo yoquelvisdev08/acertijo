@@ -5,7 +5,7 @@ Proyecto para generar videos cortos de acertijos para Instagram (Reels) con voz,
 ## Que incluye
 
 - **Voz:** Qwen3-TTS (espanol, voces predefinidas).
-- **Video:** Wan 2.1 T2V 1.3B (text-to-video, optimizado para Colab).
+- **Video:** ModelScope text-to-video-ms-1.7b (text-to-video, usa GPU en Colab T4).
 - **Subtitulos:** Generados a partir del guion y el audio.
 - **Composicion:** MoviePy (video + audio + subtitulos quemados, formato 9:16).
 - **Interfaz:** Gradio en el propio Colab.
@@ -36,7 +36,7 @@ Dentro del notebook hay una **Celda 0 (opcional)** para clonar o actualizar el r
 
 - Cuenta de Google (Colab).
 - Runtime con GPU (gratis T4 o Colab Pro para mas VRAM).
-- Para Wan 2.1 T2V 1.3B se recomienda al menos 10 GB VRAM.
+- Para el modelo de video (ModelScope 1.7B) se recomienda GPU T4 (15 GB VRAM).
 
 ## Estructura del proyecto
 
@@ -49,6 +49,5 @@ creador de clips virales/
 
 ## Referencias
 
-- [Wan 2.1](https://github.com/Wan-Video/Wan2.1) / [Diffusers Wan](https://huggingface.co/docs/diffusers/main/en/api/pipelines/wan)
+- [ModelScope text-to-video-ms-1.7b](https://huggingface.co/damo-vilab/text-to-video-ms-1.7b) (Diffusers)
 - [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)
-- [Wan2GP](https://github.com/deepbeepmeep/Wan2GP) (inspiracion para uso eficiente en GPU limitada)
