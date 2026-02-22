@@ -1,0 +1,25 @@
+# Ejemplos de prompts para la descripcion del video
+
+Usa estos textos en el campo "Descripcion del video" (o elige "Estilo de video" en la interfaz) para variar el ambiente visual del clip.
+
+---
+
+smooth fluid motion, cinematic, engaging, mysterious atmosphere, vertical 9:16
+
+dark mood, riddle, enigma, soft lighting, cinematic, vertical 9:16
+
+dreamy, magical, fantasy, smooth motion, vertical 9:16
+
+mysterious forest, fog, cinematic, fluid camera, vertical 9:16
+
+abstract shapes, smooth animation, minimalist, vertical 9:16
+
+night sky, stars, contemplative, cinematic, vertical 9:16
+
+mysterious shadows, dramatic lighting, thriller mood, vertical 9:16
+
+soft bokeh, warm tones, intimate, cinematic, vertical 9:16
+
+---
+
+Siempre incluye "vertical 9:16" para formato Instagram. Puedes combinar palabras (ej: añadir "slow motion" o "no people") y mantener el prompt en ingles para mejores resultados con el modelo de video.
