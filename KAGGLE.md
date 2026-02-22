@@ -16,7 +16,7 @@ Antes de ejecutar celdas, en el panel derecho **Settings**:
   - `ModuleNotFoundError: No module named 'qwen_tts'`
   Activa **Internet > On** (y verifica tu telefono en la cuenta si hace falta) y vuelve a ejecutar el notebook desde el inicio.
 
-- **Accelerator:** elige **GPU** (P100 o T4). Sin GPU el video usara CPU y puede saturar la RAM o fallar.
+- **Accelerator:** opcional. Con **GPU** (P100 o T4) el video es mas rapido. Sin GPU el notebook usa **CPU y RAM** (Kaggle da hasta 30 GiB RAM); sera mas lento pero funciona.
 
 La primera celda de codigo del notebook comprueba en Kaggle si hay Internet; si no, muestra un mensaje claro y detiene la ejecucion.
 
@@ -28,7 +28,7 @@ La primera celda de codigo del notebook comprueba en Kaggle si hay Internet; si 
    - Entra en [kaggle.com](https://www.kaggle.com) y en **Code** elige **New Notebook**.
 
 2. **Configurar ANTES de ejecutar**
-   - Panel derecho **Settings**: **Internet > On** y **Accelerator > GPU**.
+   - Panel derecho **Settings**: **Internet > On**. **Accelerator > GPU** es opcional (sin GPU se usa CPU y RAM; mas lento pero funciona).
 
 3. **Subir el proyecto**
    - Sube el notebook (**File > Add input > Upload** y sube `creador_acertijos_ig.ipynb`) o enlaza un dataset con el repo.
